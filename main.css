@@ -54,6 +54,10 @@ div {
   flex-direction: column;
 }
 
+.numerals:hover {
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1px #7289da;
+}
 #seven {
   grid-area: 2/1/2/2;
 }
@@ -91,7 +95,7 @@ div {
 }
 
 #zero {
-  grid-area: 5/1/5/2;
+  grid-area: 5/2/5/3;
 }
 
 /* other buttons */
@@ -105,8 +109,14 @@ div {
   flex-direction: column;
 }
 
+.misc:hover {
+  background-color: #7289da;
+  opacity: 0.8;
+  box-shadow: inset 0 0 0 1px #ffffff;
+}
+
 #dot {
-  grid-area: 5/2/5/3;
+  grid-area: 5/1/5/2;
 }
 
 #clear {
