@@ -3,41 +3,66 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Calculator</title>
+    <title>Basic Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i" rel="stylesheet">
- 
+
 </head>
 <body>
-    <div id="calc-wrapper">
-    <div id="calculator">
-        <div id="display">
-        </div>
-        
-        <div class="numerals" id="seven">7</div>
-        <div class="numerals" id="eight">8</div>
-        <div class="numerals" id="nine">9</div>
-        <div class="numerals" id="four">4</div>
-        <div class="numerals" id="five">5</div>
-        <div class="numerals" id="six">6</div>
-        <div class="numerals" id="one">1</div>
-        <div class="numerals" id="two">2</div>
-        <div class="numerals" id="three">3</div>
-        <div class="numerals" id="zero">0</div>
+    <form name="calculator">
+        <table>
+            <!--Display-->
+            <tr>
 
-        <div class="misc" id="dot">.</div>
-        <div class="misc" id="clear">C</div>
-        <div class="misc" id="equal">=</div>
-        <div class="misc" id="multiply">X</div>
-        <div class="misc" id="divide">/</div>
-        <div class="misc" id="add">+</div>
-        <div class="misc" id="subtract">-</div>
-        <div class="misc" id="square">x^2</div>
+                <td id="displaycss" colspan="4">
+                    
+                    <input type="text" name="display" value="testing" id="display"disabled>
+                
+                </td>
+            
+            </tr>
+            <!--Clear, %, divide-->
+            <tr>  
+                <td colspan="2"><input type="button" name="clear" class="numbers" value="C"></td>
+                <td><input type="button" name="percent" class="gray" value="%"></td>
+                <td><input type="button" name="divide" class="highlighted" value="/"></td>
+            
+            </tr>
+            <!--7, 8, 9, multiply-->
+            <tr>
+                <td><input type="button" name="seven" class="numbers" value="7"></td>
+                <td><input type="button" name="eight" class="numbers" value="8"></td>
+                <td><input type="button" name="nine" class="numbers" value="9"></td>
+                <td><input type="button" name="multiply" class="highlighted" value="*"></td>
+            
+            </tr>
+            <!--4, 5, 6, subtract-->
+            <tr>
+                <td><input type="button" name="four" class="numbers" value="4"></td>
+                <td><input type="button" name="five" class="numbers" value="5"></td>
+                <td><input type="button" name="six" class="numbers" value="6"></td>
+                <td><input type="button" name="subtract" class="highlighted" value="-"></td>
         
-    </div>
-    </div>
-    
-    <script src="main.js"></script>
+            </tr>
+            <!--1, 2, 3, add-->
+            <tr>
+                <td><input type="button" name="one" class="numbers" value="1"></td>
+                <td><input type="button" name="two" class="numbers" value="2"></td>
+                <td><input type="button" name="three" class="numbers" value="3"></td>
+                <td><input type="button" name="add" class="highlighted" value="+"></td>
+
+            </tr>
+            <!--0, dot, equals-->
+                <td colspan="2"><input type="button" name="zero" class="numbers" value="0"></td>
+                <td><input type="button" name="dot" class="numbers" value="."></td>
+                <td><input type="button" name="equals" class="highlighted" value="="></td>
+
+        </table>
+    </form>
+
+
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
