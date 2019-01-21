@@ -57,16 +57,19 @@ input {
 
 
 
-input[name="display"] {
+#display {
   background-color: #005F6B;
+  color: #00BFCC;
   width: 100%;
   height: 80px;
   cursor: default;
   font-weight: normal;
   font-style: italic;
   font-size: 30px;
-  text-align: right;
   padding-right: 15px;
+  padding-top: 25px;
+  text-align: right;
+  text
 }
 
 
